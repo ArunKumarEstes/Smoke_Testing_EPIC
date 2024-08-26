@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-26T12:37:42Z" name="Default suite" finished-at="2024-08-26T12:53:41Z" duration-ms="959261">
+    <groups>
+    </groups>
+    <test started-at="2024-08-26T12:37:42Z" name="Default test" finished-at="2024-08-26T12:53:41Z" duration-ms="959261">
+      <class name="Smoke_Runner.Runner">
+        <test-method is-config="true" signature="extentReportInitialization()[pri:0, instance:Smoke_Runner.Runner@39de3d36]" started-at="2024-08-26T18:07:42Z" name="extentReportInitialization" finished-at="2024-08-26T18:07:43Z" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentReportInitialization -->
+        <test-method is-config="true" signature="BrowserLaunch()[pri:0, instance:Smoke_Runner.Runner@39de3d36]" started-at="2024-08-26T18:07:43Z" name="BrowserLaunch" finished-at="2024-08-26T18:07:48Z" duration-ms="5568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="InboundTrailer()[pri:0, instance:Smoke_Runner.Runner@39de3d36]" started-at="2024-08-26T18:07:48Z" name="InboundTrailer" finished-at="2024-08-26T18:23:41Z" duration-ms="953274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InboundTrailer -->
+      </class> <!-- Smoke_Runner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
