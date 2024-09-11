@@ -358,8 +358,11 @@ public class Inbound_Trailer extends UtilClass {
 	@FindBy(xpath = "//iframe[@name='PegaGadget4Ifr']")
 	public static WebElement frameName4;
 
+	
+	// Using Constructor to initialize the Web driver
 	public Inbound_Trailer(WebDriver driver) {
 		PageFactory.initElements(driver, this);
+		
 	}
 
 	public void PAR_Order_Creation() throws Exception {
@@ -1462,7 +1465,7 @@ public class Inbound_Trailer extends UtilClass {
 //
 //		String Order_ID_1 = Order_ID_Grid.getText();
 //		if (Order_ID_1.contains(Released_ID_1)) {
-//			System.out.println("Successfully Validated Assign_Trailer_Number :" + Order_ID_1);
+//			System.out.println("Successfully Validated Assign_Trailer_Number :" + Order_ID_1); 
 //
 //		}
 		Await();
@@ -1648,12 +1651,16 @@ public class Inbound_Trailer extends UtilClass {
 		Assert.assertTrue(No_Items_In_Doc_View_3.contains("No items"));
 		System.out.println("Successfully deleted attached item");
 		Await();
-		Close_Bol_Header_Old_Search.click();
+		Close_Doc_View.click();
 		Thread.sleep(15000);
 		driver.switchTo().defaultContent();
 		Frames_Switch_EPIC();
 		Await();
 		Click_Refresh_Outbound_Loads.click();
+		
+		
+		
+		
 
 //		String[] Status_Search = { "Released", "POD Exception", "POD Received", "POD Accepted" };
 //		Status_Search_Header_Filter.sendKeys(Status_Search[3]);
